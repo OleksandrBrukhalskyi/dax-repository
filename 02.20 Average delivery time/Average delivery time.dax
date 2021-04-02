@@ -1,0 +1,5 @@
+Avg delivery = 
+            AVERAGEX(
+                    Sales,
+                    ABS(DATEDIFF(Sales[Delivery Date],Sales[Order Date],DAY))
+            )
