@@ -1,0 +1,5 @@
+Delivery State = 
+            IF(Sales[Delivery Date]-Sales[Order Date] >=[Avg All Delivery],
+                    "Above Average",
+                    "Below Average"
+            )
