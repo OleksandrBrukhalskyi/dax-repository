@@ -1,0 +1,8 @@
+Amount/Person = 
+    CALCULATE(
+            [Amount/Customer],
+            FILTER(
+                Customer,
+                Customer[Customer Type] = "Person"
+        )          
+    )
