@@ -1,0 +1,1 @@
+Amount/Customer = DIVIDE(Sales[Sales Amount],[# Customers],0)
