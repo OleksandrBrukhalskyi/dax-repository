@@ -1,0 +1,5 @@
+Avg All Delivery = 
+        AVERAGEX(
+                    ALL(Sales),
+                    Sales[Delivery Date]-Sales[Order Date]
+            )
