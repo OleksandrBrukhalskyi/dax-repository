@@ -1,0 +1,7 @@
+Amount/Company = 
+    CALCULATE(Sales[Amount/Customer],
+                FILTER(
+                        Customer, 
+                        Customer[Customer Type] = "Company"
+                )
+)
