@@ -1,0 +1,4 @@
+# Days = CALCULATE(
+                    DISTINCTCOUNT(Sales[Order Date]),
+                    FILTER(Sales,Sales[Order Date] > 1)
+)
