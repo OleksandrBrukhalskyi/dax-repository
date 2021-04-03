@@ -1,0 +1,12 @@
+Weekday = 
+    FORMAT(
+            'Date'[Date],
+             "dddd"
+          )
+          
+WeekdayNumber = WEEKDAY('Date'[Date])
+
+
+WorkingDay = IF('Date'[WeekdayNumber] IN {2,6},1,0)
+
+
