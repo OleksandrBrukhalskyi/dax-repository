@@ -1,1 +1,12 @@
+Discount Category = 
+    VAR Category = 
+            SWITCH(
+                    TRUE,
+                    Sales[Unit Discount] = 0, "FULL PRICE",
+                    Sales[Unit Discount] <= 5, "LOW",
+                    Sales[Unit Discount] > 5 && Sales[Unit Discount] <= 10, "MEDIUM",
+                    Sales[Unit Discount] > 10, "HIGH",
+                    "ERROR"
 
+            )
+    RETURN Category
