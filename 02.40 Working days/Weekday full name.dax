@@ -1,0 +1,5 @@
+Weekday = 
+    FORMAT(
+            'Date'[Date],
+             "dddd"
+          )
