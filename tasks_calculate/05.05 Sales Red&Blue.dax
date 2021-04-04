@@ -1,0 +1,9 @@
+Red/Blue Sales = 
+    CALCULATE(
+            Sales[Sales Amount],
+            FILTER(
+                ALL('Product'[Color]),
+                'Product'[Color] = "Red" || 'Product'[Color]="Blue"
+            )
+            
+    )
