@@ -1,0 +1,8 @@
+% Sales = 
+    DIVIDE(
+        Sales[Sales Amount],
+        CALCULATE(
+            Sales[Sales Amount],
+            ALL(Sales)
+        )
+)
