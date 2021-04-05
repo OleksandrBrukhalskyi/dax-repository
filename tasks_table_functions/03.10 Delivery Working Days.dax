@@ -1,0 +1,8 @@
+DeliveryWorkingDays = 
+            CALCULATE(
+                    COUNTROWS('Date'),
+                    DATESBETWEEN('Date'[Date],Sales[Order Date],Sales[Delivery Date]),
+                    'Date'[Working Day] = "WorkDay",
+                    ALL(Sales)
+                  
+            )
