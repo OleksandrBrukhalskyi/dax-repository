@@ -1,0 +1,6 @@
+#CustWithChildren = COUNTROWS(
+    FILTER(
+        Customer, 
+        Customer[Total Children] > 0
+    )
+)
