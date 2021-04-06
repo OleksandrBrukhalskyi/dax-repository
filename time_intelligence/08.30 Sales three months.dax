@@ -1,0 +1,10 @@
+Sales 3M = 
+    CALCULATE(
+        Sales[Sales Amount],
+        DATESINPERIOD(
+            'Date'[Date],
+            MIN('Product'[FirstSaleDate]),
+            3,
+            MONTH
+        )
+    )
