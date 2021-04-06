@@ -1,0 +1,8 @@
+Running Total = 
+    VAR LastVisibleDate = MAX('Date'[Date])
+RETURN
+    CALCULATE(
+        SUMX(Sales, Sales[Quantity] * Sales[Net Price]),
+        ALL('Date'),
+        'Date'[Date] <= LastVisibleDate
+    )
