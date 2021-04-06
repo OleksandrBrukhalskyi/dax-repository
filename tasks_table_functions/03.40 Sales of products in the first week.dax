@@ -1,0 +1,7 @@
+FirstSaleDate = CALCULATE(
+    MIN(Sales[Order Date])  
+)
+FirstWeekSales = CALCULATE(
+    Sales[Sales Amount],
+     DATESBETWEEN(Sales[Order Date],'Product'[FirstSaleDate],'Product'[FirstSaleDate]+7)           
+)
