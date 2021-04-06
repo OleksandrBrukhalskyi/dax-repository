@@ -1,0 +1,7 @@
+Sales PY = 
+    CALCULATE(
+            Sales[Sales Amount],
+            SAMEPERIODLASTYEAR('Date'[Date])
+    )
+YOY % = DIVIDE(Sales[Sales Amount],Sales[Sales PY],0)
+    
