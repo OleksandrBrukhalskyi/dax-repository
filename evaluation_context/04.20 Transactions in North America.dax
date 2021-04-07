@@ -1,1 +1,2 @@
-
+# Sales NA = 
+CALCULATE([# Sales], 'Customer'[Continent] IN { "North America" })
