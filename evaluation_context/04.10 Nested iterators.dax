@@ -1,1 +1,8 @@
-
+Max Discount Sales = 
+SUMX ( 
+    'Sales',
+        VAR LineAmount = Sales[Quantity] * Sales[Unit Price]
+        VAR ProductDiscount = RELATED('Product'[Max Discount])
+        RETURN
+            LineAmount * (1 - ProductDiscount)  
+)
