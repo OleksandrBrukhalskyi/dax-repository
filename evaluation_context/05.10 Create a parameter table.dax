@@ -1,0 +1,8 @@
+Discounted Sales = 
+VAR RealSales = 
+    Sales[Sales Amount]
+VAR SelDiscount = 
+    SELECTEDVALUE(Discounts[Discount],0)
+VAR Result = Sales[Sales Amount] * (1 - SelDiscount)
+RETURN
+Result
