@@ -1,0 +1,16 @@
+% On All = DIVIDE(
+                Sales[Sales Amount],
+                SUMX(
+                    ALL(Sales),
+                        Sales[Quantity] * Sales[Net Price]
+                )
+)
+% On Cat = 
+         DIVIDE(
+                Sales[Sales Amount],
+                SUMX(
+                    ALLSELECTED(Sales),
+                        Sales[Quantity] * Sales[Net Price]
+                )
+                
+)
